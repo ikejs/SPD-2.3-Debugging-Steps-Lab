@@ -6,9 +6,15 @@ Exercise 2
 #
 # TODO: Gather information about the source of the error and paste your findings here. E.g.:
 # - What is the expected vs. the actual output?
+#       True, False. Actual output: False, False.
 # - What error message (if any) is there?
+#       
 # - What line number is causing the error?
+#       
 # - What can you deduce about the cause of the error?
+#       No error, but the input is the problem. 
+#       [4, 1, 2, 3] is not 3 consecutive numbers increasing by 1.
+#       Changing the input to [0, 1, 2] would work.
 
 
 # PART 2: State Assumptions
@@ -32,5 +38,5 @@ if __name__ == '__main__':
     answer1 = contains_3_consecutive([1, 2, 4])
     print(answer1) # should print False
 
-    answer2 = contains_3_consecutive([4, 1, 2, 3])
+    answer2 = contains_3_consecutive([0, 1, 2])
     print(answer2) # should print True
